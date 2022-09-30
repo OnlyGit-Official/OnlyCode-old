@@ -1,0 +1,6 @@
+run = ""
+
+[nix]
+
+[nix.channel] channel = "stable-22_05"
+
