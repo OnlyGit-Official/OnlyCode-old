@@ -9,24 +9,12 @@
 <body>
     <?php
 
-/*
-        
 
-$files = scandir('./');
-
-foreach($files as $file) {
-
-echo "$file" . "<br>";
-
-}
-
-  */
-
-foreach (scandir(dirname(__FILE__)) as $filename) {
-    if ($filename[0] === '.') {
-        continue;
-    }
-    echo "$filename" . "<br>";
+        foreach (scandir(dirname(__FILE__)) as $filename) {
+            if ($filename[0] === '.') {
+              continue;
+        }
+        echo "$filename" . "<br>";
 }
         
     ?>
