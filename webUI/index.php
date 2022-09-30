@@ -10,12 +10,14 @@
     <?php
 
 
-        foreach (scandir(dirname(__FILE__)) as $filename) {
+        foreach (scandir("./git") as $filename) {
             if ($filename[0] === '.') {
               continue;
         }
-        echo "$filename" . "<br>";
+        echo "<a href='inrepo.php?repo=$filename'>$filename</a>" . "<br>";
 }
+
+// dirname(__FILE__)
         
     ?>
 
