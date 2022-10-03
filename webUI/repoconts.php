@@ -6,7 +6,7 @@ $contents = $_GET['path'];
 $conts = shell_exec("cat $contents");
 
 if (is_dir($contents)) {
-  echo "dir";
+  header("Location: folderinrepo.php?folder=$contents");
 } else {
   echo "--FILENAME:$contents--";
   echo "<br>";

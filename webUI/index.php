@@ -17,7 +17,6 @@
         echo "<a href='inrepo.php?repo=$filename'>$filename</a>" . "<br>";
 }
 
-// dirname(__FILE__)
         
     ?>
 
