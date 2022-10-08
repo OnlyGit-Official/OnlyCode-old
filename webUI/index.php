@@ -21,5 +21,12 @@
     ?>
 
     
+<form action="create.php" method="post">
+Repo: <input type="text" name="repo">
+
+<button type="submit">Submit</button>
+</form>
+
+    
 </body>
 </html>
