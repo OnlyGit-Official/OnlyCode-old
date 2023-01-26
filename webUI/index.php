@@ -7,8 +7,10 @@
     <title>Git</title>
 </head>
 <body>
+    
     <?php
-
+        echo "<button onclick='history.back()'>&lt;</button>";
+        echo "<button onclick='history.forward()'>&gt;</button>";
 
         foreach (scandir("./git") as $filename) {
             if ($filename[0] === '.') {

@@ -1,6 +1,9 @@
 <?php
 $folder = $_GET['folder'];
 
+echo "<button onclick='history.back()'>&lt;</button>";
+echo "<button onclick='history.forward()'>&gt;</button>";
+
 foreach (scandir("$folder") as $item) {
             if ($item[0] === '.') {
               continue;

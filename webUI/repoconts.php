@@ -1,7 +1,10 @@
+
+
 <?php
 $contents = $_GET['path'];
 
-
+echo "<button onclick='history.back()'>&lt;</button>";
+echo "<button onclick='history.forward()'>&gt;</button>";
 
 // $conts = shell_exec("cat $contents");
 

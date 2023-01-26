@@ -4,7 +4,7 @@
 # Deployment guid
 1. Download this project
 
-2. Change Directory into the SelfHostedGIT
+2. Change Directory into SelfHostedGIT/webUI
 
 3. Run `php -S 0.0.0.0:3000` to start the php server
 
