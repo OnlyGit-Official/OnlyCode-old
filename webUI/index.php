@@ -9,7 +9,7 @@
 <body>
     
     <?php
-        echo "<button onclick='history.back()'>&lt;</button>";
+        echo "<button onclick='history.back()' disabled>&lt;</button>";
         echo "<button onclick='history.forward()'>&gt;</button>";
         echo "<br>";
 
