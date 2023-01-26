@@ -3,6 +3,7 @@ $repo = $_GET['repo'];
 
 echo "<button onclick='history.back()'>&lt;</button>";
 echo "<button onclick='history.forward()'>&gt;</button>";
+echo "<br>";
 
 foreach (scandir("./git/$repo") as $contents) {
             if ($contents[0] === '.') {

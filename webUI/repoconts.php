@@ -5,6 +5,7 @@ $contents = $_GET['path'];
 
 echo "<button onclick='history.back()'>&lt;</button>";
 echo "<button onclick='history.forward()'>&gt;</button>";
+echo "<br>";
 
 // $conts = shell_exec("cat $contents");
 

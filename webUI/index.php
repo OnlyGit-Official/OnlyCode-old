@@ -11,6 +11,7 @@
     <?php
         echo "<button onclick='history.back()'>&lt;</button>";
         echo "<button onclick='history.forward()'>&gt;</button>";
+        echo "<br>";
 
         foreach (scandir("./git") as $filename) {
             if ($filename[0] === '.') {
