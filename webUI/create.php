@@ -1,5 +1,5 @@
 <?php
 $repo = $_POST['repo'];
-shell_exec("mkdir -p git/$repo | git init git/$repo");
+shell_exec("bash ../shell/create.sh $repo");
 header("Location: index.php");
 ?>
