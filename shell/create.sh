@@ -1,7 +1,7 @@
 #!/bin/bash
 
 mkdir -p git/$1
-git init git/$1
+git init --bare git/$1
 cd git/$1
 touch README.md
 git add .
