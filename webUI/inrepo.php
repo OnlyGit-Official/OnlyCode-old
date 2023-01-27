@@ -29,6 +29,8 @@ foreach (scandir("./git/$repo") as $contents) {
     GitHub Username: <input type='text' placeholder='Hardwaregore' name='username'>
     <br>
     Access Token: <input type='password' placeholder='Personal access token' name='key'>
+    <br>
+    Force? <input type='checkbox' value='1' name='force' />
 
       <button type='submit'>Push</button>
     
