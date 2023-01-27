@@ -30,7 +30,7 @@ foreach (scandir("./git/$repo") as $contents) {
     <br>
     Access Token: <input type='password' placeholder='Personal access token' name='key'>
 
-      <button type='submit'>Push</button
+      <button type='submit'>Push</button>
     
   </form>
   
