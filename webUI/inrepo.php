@@ -5,11 +5,11 @@ echo "<button onclick='history.back()'>&lt;</button>";
 echo "<button onclick='history.forward()'>&gt;</button>";
 echo "<br>";
 
-foreach (scandir("./git/$repo") as $contents) {
+foreach (scandir("/git/$repo") as $contents) {
             if ($contents[0] === '.') {
               continue;
         }
-        echo "<a href='repoconts.php?path=git/$repo/$contents'>$contents</a>" . "<br>";
+        echo "<a href='repoconts.php?path=/git/$repo/$contents'>$contents</a>" . "<br>";
 }
 
 
