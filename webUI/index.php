@@ -13,7 +13,7 @@
         echo "<button onclick='history.forward()'>&gt;</button>";
         echo "<br>";
 
-        foreach (scandir("/git") as $filename) {
+        foreach (scandir("./show") as $filename) {
             if ($filename[0] === '.') {
               continue;
         }
