@@ -1,6 +1,8 @@
 <?php
 $repo = $_GET['repo'];
 
+shell_exec("cd ./show/$repo && git pull");
+
 echo "<button onclick='history.back()'>&lt;</button>";
 echo "<button onclick='history.forward()'>&gt;</button>";
 echo "<br>";
