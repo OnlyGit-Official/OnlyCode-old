@@ -5,6 +5,6 @@ git init --bare /git/$1
 
 chown -R git:git /git/*
 
-cd ../view/show
+cd ./show
 
 git clone ssh://git@localhost:/git/$1
