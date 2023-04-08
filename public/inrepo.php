@@ -2101,6 +2101,6 @@ echo $Parsedown->text($conts);
   header("HTTP/1.1 404 Not Found");
   header("Location: ../error/404.php");
 }
-echo "</div>";
+echo "</div><br>";
 ?>
 

@@ -28,7 +28,11 @@
   justify-content: center;
   align-items: center;
   white-space: pre;
-}</style>
+}
+a {
+    padding: 1rem;
+}
+</style>
 </head>
 <body>
 <nav>

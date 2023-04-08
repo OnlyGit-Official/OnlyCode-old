@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=JetBrains%20Mono");
 
-.border {
+a.border {
     border-style: solid;
     border-radius: 10px;
     border-color: rgba(116, 114, 114, 0.217);
@@ -11,6 +11,8 @@ a.border-noround {
     border-style: solid;
 
     border-color: rgba(116, 114, 114, 0.217);
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .txt {

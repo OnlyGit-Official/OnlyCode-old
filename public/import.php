@@ -30,15 +30,18 @@ h2 {
 .BRuh {
     padding: 2.5rem;
 }
-
+a {
+    padding: 1rem;
+}
 </style>
 </head>
 <body>
 <nav>
 			<a href="index.php"><img src="icons/small-logo.png" alt="logo" height="50" width="50"></img></a>
 			<div class='links'>
+            <button style="border:none; background-color: transparent;" onclick='history.back();'><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
             <a href="new.php"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path><line x1="12" y1="10" x2="12" y2="16"></line><line x1="9" y1="13" x2="15" y2="13"></line></svg></a>
-           
+            
 			</div>
 		</nav>
         <h2>Import a Project</h2><div class='BRuh'></div>
