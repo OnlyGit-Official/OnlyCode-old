@@ -33,6 +33,18 @@ h2 {
 a {
     padding: 1rem;
 }
+
+.error {
+  background-color: #f54747;
+  padding: 5px;
+
+}
+.error-border {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(116, 114, 114, 0.217);
+
+}
 </style>
 </head>
 <body>
@@ -46,6 +58,14 @@ a {
 		</nav>
         <h2>Import a Project</h2><div class='BRuh'></div>
         <div class="center">
+        <?php 
+          
+          if (isset($_GET['err'])){
+
+              echo "<div><span class='error error-border'>Invalid Repository URL!</span>";
+
+          }
+          ?>
     <form action="import-b.php" method="post" >
         <lable><h3>Repository URL:</h3></lable>
     <input class='txt' type="url" name="repo">
@@ -53,6 +73,7 @@ a {
     <a style='vertical-align: middle;
   display: inline-block;white-space: pre;' onclick="this.closest('form').submit();"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path><line x1="12" y1="10" x2="12" y2="16"></line><line x1="9" y1="13" x2="15" y2="13"></line></svg> Import Repository</a>
 </form>
+  </div>
    </div>
 </body>
 </html>

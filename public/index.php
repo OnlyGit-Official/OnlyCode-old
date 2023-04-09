@@ -28,6 +28,7 @@ a {
     color: white;
     text-decoration: none;
     padding: 1rem;
+    
 }
 </style>
 

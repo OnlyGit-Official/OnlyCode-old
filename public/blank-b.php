@@ -1,6 +1,17 @@
 <?php
 try {
-$repo = $_POST['repo'];
+    $repo = $_POST['repo'];
+    if(empty(trim($repo))){
+        $err = "1";
+        header("Location: blank.php?err=$err");
+        die($err);
+    } elseif(!preg_match('/^[a-zA-Z-]+$/', trim($repo))){
+        $err = "2";
+        header("Location: blank.php?err=$err");
+        die($err);
+        
+    }
+
 $pubpriv = $_POST['pubpriv'];
 
 shell_exec("bash ./shell/create.sh $repo");

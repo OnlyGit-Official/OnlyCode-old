@@ -2087,20 +2087,20 @@ foreach (scandir("./show/$repo") as $contents) {
         }
         echo "<a class='border' style='margin:25px;' href='repoconts.php?path=./show/$repo/$contents'>$contents</a>" . "<br><br><br><br>";
 }
+echo "<div class='padding border-readme'><h5 style='border-bottom: 5px solid grey;padding-bottom:10px;'>README.md</h5>";
+$Parsedown = new Parsedown();
 
 $fs = filesize("./show/$repo/README.md");
 $f = fopen("./show/$repo/README.md", 'r');
 $conts = fread($f, $fs);
 fclose($f);
-echo "<div class='padding border-readme'><h5 style='border-bottom: 5px solid grey;padding-bottom:10px;'>README.md</h5>";
-$Parsedown = new Parsedown();
-echo $Parsedown->text($conts);
+echo $Parsedown->text(htmlspecialchars($conts));
 
-
+echo "</div><br>";
 } catch (Exception $null) {
   header("HTTP/1.1 404 Not Found");
   header("Location: ../error/404.php");
 }
-echo "</div><br>";
+
 ?>
 
