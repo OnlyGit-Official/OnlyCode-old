@@ -15,7 +15,7 @@ try {
 $pubpriv = $_POST['pubpriv'];
 
 shell_exec("bash ./shell/create.sh $repo");
-header("Location: home");
+header("Location: index.php");
 
 } catch (Exception $null) {
     header("HTTP/1.1 500 Internal Server Error");

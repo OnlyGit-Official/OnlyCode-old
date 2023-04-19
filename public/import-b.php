@@ -9,7 +9,7 @@ try {
         $err = "3";
         header("Location: import.php?err=$err");
         die($err);
-    }
+    } 
 
 $name = substr($repo, strrpos($repo, '/') + 1);
 
